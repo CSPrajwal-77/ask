@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <meta name="description" content="A special message just for you">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Starfield Canvas -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Floating Hearts Container -->
+    <div id="floating-hearts"></div>
+
+    <!-- ===== SECTION 1: INTRO ===== -->
+    <section id="intro" class="section active">
+        <div class="intro-content">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="heart-seal">💌</div>
+                </div>
+            </div>
+            <p class="intro-subtitle">You have a letter...</p>
+            <button class="btn-glow" id="btn-open">Open</button>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 2: LETTER ===== -->
+    <section id="letter" class="section">
+        <div class="letter-container">
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <span class="letter-date">June 17, 2026</span>
+                    <div class="letter-ornament">✦ ❤️ ✦</div>
+                </div>
+                <div class="letter-body">
+                    <p class="letter-greeting typewriter" data-delay="0">Dear Sarah,</p>
+                    <p class="letter-line typewriter" data-delay="800">I can't believe we've already completed 3 months
+                        together — and honestly, every single day with you has felt like a gift. </p>
+                    <p class="letter-line typewriter" data-delay="2200">You have handled me so well throughout all of
+                        this. My moods, my chaos, my everything you took it all in with so much patience and love. Not
+                        everyone could do that, but you made it look effortless. </p>
+                    <p class="letter-line typewriter" data-delay="4000">You have made me feel so loved, Sarah. The way
+                        you care, the way you show up,it means the world to me. ✨</p>
+                    <p class="letter-line typewriter" data-delay="5800">These 3 months have been the most beautiful
+                        chapter of my life, and I don't want this story to ever end...</p>
+                    <p class="letter-line typewriter" data-delay="7400"
+                        style="font-family: 'Dancing Script', cursive; color: #e84393; font-size: 1.3rem; margin-top: 24px; text-align: right;">
+                        Forever yours,<br>Prajwal ❤️</p>
+                </div>
+                <button class="btn-continue" id="btn-continue">Cosntinue →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 3: THE QUESTION ===== -->
+    <section id="question" class="section">
+        <div class="question-container">
+            <div class="question-hearts">
+                <span class="q-heart q-heart-1">❤️</span>
+                <span class="q-heart q-heart-2">💕</span>
+                <span class="q-heart q-heart-3">❤️</span>
+                <span class="q-heart q-heart-4">💗</span>
+                <span class="q-heart q-heart-5">❤️</span>
+            </div>
+            <h1 class="question-text">
+                <span class="word" style="--i:0">Will</span>
+                <span class="word" style="--i:1">you</span>
+                <span class="word" style="--i:2">be</span>
+                <span class="word" style="--i:3">my</span>
+                <span class="word" style="--i:4">girlfriend</span>
+                <span class="word" style="--i:5">?</span>
+            </h1>
+            <p class="question-sub">🌻</p>
+            <div class="buttons-container" id="buttons-container">
+                <button class="btn-yes" id="btn-yes">Yes! 💖</button>
+                <button class="btn-no" id="btn-no">No</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION 4: CELEBRATION ===== -->
+    <section id="celebration" class="section">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="celebration-content">
+            <div class="celebration-emoji">😽</div>
+            <h1 class="celebration-title">Yayyyyyyyyyyy!</h1>
+            <p class="celebration-sub">I love you Sarah!!!!!!!!!!!❤️</p>
+            <div class="celebration-hearts-rain" id="hearts-rain"></div>
+        </div>
+    </section>
+
+        <!-- Audio for letter (place your song file as `song.mp3` in the project root or update the src) -->
+        <audio id="letter-audio" src="song.mp3" preload="auto"></audio>
+        <script src="script.js"></script>
+</body>
+
+</html>
